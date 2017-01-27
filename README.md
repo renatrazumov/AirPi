@@ -3,7 +3,15 @@ AirPi
 
 A Raspberry Pi weather station and air quality monitor alongside IPFS.
 
-This is the code for the project located at http://airpi.es
+The original code can be located at http://airpi.es, https://github.com/tomhartley/AirPi for the original version or
+https://git.cccmz.de/julric/airpi.git for the version with textfile-support, mysql-support, rrd-support and lcd-support.
+
+
+This branch will use the https://git.cccmz.de/julric/airpi.git version of the Airpi code because we want enable the Airpi to print output on a txt files. 
+
+We will use IPFS to hash the txt files and add it to the InterPlanetary File System (IPFS) a content-addressable, peer-to-peer hypermedia distribution protocol
+
+The objectif here is to remove the need for external data collected by the Airpi to be stored on 3rd party server.
 
 Currently it is split into airpi.py, as well as multiple input and multiple output plugins. airpi.py collects data from each of the input plugins specified in sensors.cfg, and then passes the data provided by them to each output defined in outputs.cfg. The code for each sensor plugin is contained in the 'sensors' folder and the code for each output plugin in the 'outputs' folder.
 
@@ -125,7 +133,7 @@ If your board version is "0" change both instances of `i2cbus = 1` to `i2cbus = 
 
 Press CTRL+X to exit the file, when prompted, press "y" to save the file.
 
-If you want to push the data to Xively, edit the `outputs.cfg` file:
+If you want to push the data to an external 3rd party server, edit the `outputs.cfg` file:
 
 `nano outputs.cfg`
 
@@ -136,14 +144,14 @@ The start of the file should look like this:
 filename=print
 enabled=on
 
-[Xively]
-filename=xively
+[Name of your website]
+filename=XXXXXX
 enabled=on
 APIKey=xxxxxxxxxx
 FeedID=xxxxxxxxxx
 ```
 
-If you have registered with https://xively.com - you can add your API Key and Feed ID here.
+
 
 ## Running
 
@@ -163,7 +171,7 @@ Success: Loaded sensor plugin MiCS-2710
 Success: Loaded sensor plugin MiCS-5525
 Success: Loaded sensor plugin Mic
 Success: Loaded output plugin Print
-Success: Loaded output plugin Xively
+
 
 Time: 2014-06-04 09:10:18.942625
 Temperature: 30.2 C
