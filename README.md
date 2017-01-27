@@ -184,8 +184,24 @@ Volume: 338.709677419 mV
 Uploaded successfully
 
 ```
+To add Textfile support you need to add the following lines to your outputs.cfg:
 
+```
+[Log]
+filename=log
+enabled=on
+text_file=sensors.log
 
-IPFS
+```
+In the line text_file=... You set the location of Your text file, where to write the data to.
+
+The log contains all sensors+values of one measurement in one line, separated by semicolons, the sensor-name and values are separated by comma:
+
+```
+time,1414045654;TemperatureBMP,22.5;Pressure,1006.56;Light_Level,24100.0;Smoke_Level,9301.80806676;Nitrogen_Dioxide,28897.338403;Carbon_Monoxide,527607.361963;Volume,3077.41935484
+
+```
+
+## Running IPFS
 
 comming soon...
