@@ -9,7 +9,7 @@ https://git.cccmz.de/julric/airpi.git for the version with textfile-support, mys
 
 This branch will use the https://git.cccmz.de/julric/airpi.git version of the Airpi code because we want enable the Airpi to print output on a txt files. 
 
-We will use IPFS to hash the txt files and add it to the InterPlanetary File System (IPFS) a content-addressable, peer-to-peer hypermedia distribution protocol
+We will use IPFS to hash the txt files and add it to the InterPlanetary File System (IPFS) a content-addressable, peer-to-peer hypermedia distribution protocol https://github.com/ipfs/ipfs.
 
 The objectif here is to remove the need for external data collected by the Airpi to be stored on 3rd party server.
 
