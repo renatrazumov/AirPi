@@ -101,7 +101,7 @@ Clone this repo into your git directory (or wherever you want):
 
 ```
 cd ~/git
-git clone https://github.com/tomhartley/AirPi.git
+git clone https://git.cccmz.de/julric/airpi.git
 cd AirPi
 ```
 
