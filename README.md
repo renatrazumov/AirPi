@@ -204,4 +204,17 @@ time,1414045654;TemperatureBMP,22.5;Pressure,1006.56;Light_Level,24100.0;Smoke_L
 
 ## Running IPFS
 
-coming soon...
+https://ipfs.io/docs/install/
+
+### Prerequisites
+
+IPFS works with Go 1.7.0 or later. To check what go version you have installed, type go version. Here's what I get:
+
+```
+> go version
+go version go1.7
+
+```
+### Uploading data to IPFS
+
+coming soon.....
