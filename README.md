@@ -1,7 +1,7 @@
 AirPi
 ========
 
-A Raspberry Pi weather station and air quality monitor.
+A Raspberry Pi weather station and air quality monitor alongside IPFS.
 
 This is the code for the project located at http://airpi.es
 
