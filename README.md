@@ -205,6 +205,8 @@ time,1414045654;TemperatureBMP,22.5;Pressure,1006.56;Light_Level,24100.0;Smoke_L
 ## Running IPFS
 
 https://ipfs.io/docs/install/
+http://www.siliconian.com/blog/16-bitcoin-blockchain/23-beginner-s-guide-to-installing-ipfs-on-a-raspberry-pi-2
+https://www.youtube.com/watch?v=pap18o5Ntxw
 
 ### Prerequisites
 
@@ -217,4 +219,52 @@ go version go1.7
 ```
 ### Uploading data to IPFS
 
-coming soon.....
+Once IPFS is installed on your Raspberry pi To check what go version you have installed, open a new terminal type go version. Here's what you should get:
+
+```
+> ipfs version
+ipfs version 0.4.4
+
+```
+
+Then start the ipfs daemon in order to connect youre Raspberry pi to the IPFS network.
+Here's what you should get:
+
+```
+> ipfs daemon
+Initializing daemon...
+Adjusting current ulimit to 1024...
+Successfully raised file descriptor limit to 1024.
+Swarm listening on /ip4/xxx.xx.xx/tcp/xxxx
+Swarm listening on /ip6/xxxx:xxx:xxxx:xxxx:xxxx/tcp/xxxx
+API server listening on /ip4/xxx.xx.xx/tcp/xxxx
+Gateway (readonly) server listening on /ip4/xxx.xx.xx/tcp/xxxx
+Daemon is ready
+
+```
+
+Open an other terminal and go into youre Airpi repository 
+
+```
+cd Airpi
+
+``` 
+
+make sure that your sensor output log 'sensors.log' is located inside the folder
+
+```
+>ls
+```
+
+Then add the files to IPFS with the following command
+
+```
+ipfs add sensors.log
+added QmPKcCtDgvV4y3fezPwFGjQV4SVFbiVXCD6H37WTp9FLgT sensors.log
+```
+IPFS will create a multi hash of the files and distribute the hash to all the nodes connected to the network
+The address of the 'sensors.log' files with all the input recorded by the Airpi is: 'QmPKcCtDgvV4y3fezPwFGjQV4SVFbiVXCD6H37WTp9FLgT'
+It's address is based on his content which mean if more input are added to the 'sensors.log' files then a new hash need to be publish by the Pi.
+The benefit of this method is I'm no longer relly on traditional 3rd party centralised server to store and retrieve my data.
+As long as nodes are connected to the IPFS then your input will be stored forever and anyone who is aware of the last hash published can retrieve the files.
+
