@@ -262,9 +262,22 @@ Then add the files to IPFS with the following command
 ipfs add sensors.log
 added QmPKcCtDgvV4y3fezPwFGjQV4SVFbiVXCD6H37WTp9FLgT sensors.log
 ```
-IPFS will create a multi hash of the files and distribute the hash to all the nodes connected to the network
-The address of the 'sensors.log' files with all the input recorded by the Airpi is: 'QmPKcCtDgvV4y3fezPwFGjQV4SVFbiVXCD6H37WTp9FLgT'
+IPFS will create a multi hash of the files and distribute the hash to all the nodes connected to the decentralised network.
+The address of the 'sensors.log' files with all the input recorded by the Airpi is:
+
+'QmPKcCtDgvV4y3fezPwFGjQV4SVFbiVXCD6H37WTp9FLgT'
+
 It's address is based on his content which mean if more input are added to the 'sensors.log' files then a new hash need to be publish by the Pi.
-The benefit of this method is I'm no longer relly on traditional 3rd party centralised server to store and retrieve my data.
+
+This method solve the  reliance problem of :
+
+- Centralised Host and website Administrators: server hosting a site goes down because of censorship, lack of interest or insolvancy.
+
+- Reliance on Users: Content often must have a critical mass of users or visitors to even merit hosting
+
+
+
+
+
 As long as nodes are connected to the IPFS then your input will be stored forever and anyone who is aware of the last hash published can retrieve the files.
 
