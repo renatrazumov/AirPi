@@ -290,7 +290,7 @@ ipfs cat QmPKcCtDgvV4y3fezPwFGjQV4SVFbiVXCD6H37WTp9FLgT
 
 Or connect to a more friendly user web console but "partially decentralised" (IPFS is still in alpha version) :)
 
-http://localhost:5001/ipfs/QmU3o9bvfenhTKhxUakbYrLDnZU7HezAVxPM6Ehjw9Xjqy/#/objects/\ipfs\QmPKcCtDgvV4y3fezPwFGjQV4SVFbiVXCD6H37WTp9FLgT
+http://localhost:5001/ipfs/QmU3o9bvfenhTKhxUakbYrLDnZU7HezAVxPM6Ehjw9Xjqy/#/objects/\ipfs\QmPKcCtDgvV4y3fezPwFGjQV4SVFbiVXCD6H37WTp9FLgT 
 
 or
 
