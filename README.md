@@ -9,9 +9,13 @@ https://git.cccmz.de/julric/airpi.git for the version with textfile-support, mys
 
 This branch will use the https://git.cccmz.de/julric/airpi.git version of the Airpi code because we want enable the Airpi to print output on a txt files. 
 
-We will use IPFS to hash the txt files and add it to the InterPlanetary File System (IPFS) a content-addressable, peer-to-peer hypermedia distribution protocol https://github.com/ipfs/ipfs.
+We will hash the txt files and add it to the InterPlanetary File System (IPFS) a content-addressable, peer-to-peer hypermedia distribution protocol https://github.com/ipfs/ipfs.
 
-The objectif here is to remove the need for external data collected by the Airpi to be stored on 3rd party server.
+The objectif here is to remove the need for input data collected by the Airpi to rely on any type of centralised hosting system or centralised site administrators.
+
+
+
+## Installation
 
 Currently it is split into airpi.py, as well as multiple input and multiple output plugins. airpi.py collects data from each of the input plugins specified in sensors.cfg, and then passes the data provided by them to each output defined in outputs.cfg. The code for each sensor plugin is contained in the 'sensors' folder and the code for each output plugin in the 'outputs' folder.
 
@@ -19,7 +23,6 @@ Some of the files are based off code for the Raspberry Pi written by Adafruit: h
 
 For installation instructions, see http://airpi.es/kit.php
 
-## Installation
 
 ### Prerequisites
 
@@ -269,7 +272,7 @@ The address of the 'sensors.log' files with all the input recorded by the Airpi 
 
 It's address is based on his content which mean if more input are added to the 'sensors.log' files then a new hash need to be publish by the Pi.
 
-This method solve the  reliance problem of :
+This method solve the  reliance problem of
 
 - Centralised Host and website Administrators: server hosting a site goes down because of censorship, lack of interest or insolvancy.
 
