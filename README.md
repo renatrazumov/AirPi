@@ -281,3 +281,17 @@ This method solve the  reliance problem of :
 
 As long as nodes are connected to the IPFS then your input will be stored forever and anyone who is aware of the last hash published can retrieve the files.
 
+You can retrieve the files from your command line by directly connect your node to ipfs and type
+
+```
+ipfs cat QmPKcCtDgvV4y3fezPwFGjQV4SVFbiVXCD6H37WTp9FLgT
+
+```
+
+Or connect to a more friendly user web console but "partially decentralised" (IPFS is still in alpha version) :)
+
+http://localhost:5001/ipfs/QmU3o9bvfenhTKhxUakbYrLDnZU7HezAVxPM6Ehjw9Xjqy/#/objects/\ipfs\QmPKcCtDgvV4y3fezPwFGjQV4SVFbiVXCD6H37WTp9FLgT
+
+or
+
+https://ipfs.io/ipfs/QmPKcCtDgvV4y3fezPwFGjQV4SVFbiVXCD6H37WTp9FLgT
